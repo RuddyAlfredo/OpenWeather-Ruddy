@@ -14,6 +14,6 @@ public interface ConsultaRepository extends JpaRepository<Consulta, Integer> {
     
     
 
-    @Query(value = "SELECT c.id AS id, c.fecha AS fecha, c.tipo_consulta AS tipo, c.resultado AS resultado, c.nombre_usuario AS usuario FROM Consultas c WHERE c.nombre_usuario=:nombreUsuario", nativeQuery = true)
+    @Query(value = "SELECT c.id AS id, c.fecha AS fecha, c.tipo_consulta AS tipo, c.url AS url, c.resultado AS resultado, c.nombre_usuario AS usuario FROM Consultas c WHERE c.nombre_usuario=:nombreUsuario", nativeQuery = true)
     public List<Tuple> findAllByNombreUsuario(@Param("nombreUsuario") String nombreUsuario);
 }

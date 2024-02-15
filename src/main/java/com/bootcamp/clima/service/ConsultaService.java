@@ -187,6 +187,7 @@ public class ConsultaService {
             jsonObject.put("id", consulta.get("id"));
             jsonObject.put("fecha", consulta.get("fecha"));
             jsonObject.put("tipo", consulta.get("tipo"));
+            jsonObject.put("url", consulta.get("url"));
             jsonObject.put("resultado", consulta.get("resultado"));
             jsonObject.put("usuario", consulta.get("usuario"));
 
